@@ -67,7 +67,8 @@ export default {
   		animation: {
   			'shimmer-slide': 'shimmer-slide var(--speed) ease-in-out infinite alternate',
   			'spin-around': 'spin-around calc(var(--speed) * 2) infinite linear',
-  			rainbow: 'rainbow var(--speed, 2s) infinite linear'
+  			rainbow: 'rainbow var(--speed, 2s) infinite linear',
+  			gradient: 'gradient 8s linear infinite'
   		},
   		keyframes: {
   			'shimmer-slide': {
@@ -95,6 +96,11 @@ export default {
   				},
   				'100%': {
   					'background-position': '200%'
+  				}
+  			},
+  			gradient: {
+  				to: {
+  					backgroundPosition: 'var(--bg-size) 0'
   				}
   			}
   		}
