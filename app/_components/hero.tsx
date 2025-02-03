@@ -1,51 +1,63 @@
-import Waves from "@/components/waves";
-import { ShimmerButton } from "@/components/ui/shimmer-button";
+import Image from "next/image";
+import Link from "next/link";
+import { Spotlight } from "@/components/ui/spotlight";
+import heroImage from "./images/hero.png";
+import backgroundGrids from "./images/background-grids.png";
+import blob from "./images/blur-blob-1.png"
 
 export default function Hero() {
   return (
-    <section className="max-w-4xl mx-auto p-4 flex flex-col justify-center items-center relative min-h-screen ">
-      <Waves
-        lineColor="#fff"
-        backgroundColor="bg-brand-violet"
-        waveSpeedX={0.02}
-        waveSpeedY={0.01}
-        waveAmpX={40}
-        waveAmpY={20}
-        friction={0.9}
-        tension={0.01}
-        maxCursorMove={120}
-        xGap={12}
-        yGap={36}
-        style={{
-          width: "800px",
-          height: "800px",
-          position: "absolute",
-          borderRadius: "10%",
-          opacity: 0.18,
-          zIndex: -1,
-          background: "transparent",
-          boxShadow: "0 0 100px 60px rgba(255,255,255,0.4)",
-          backdropFilter: "blur(10px)",
-          left: "50%",
-          top: "50%",
-          transform: "translate(-50%, -50%)",
-          //   WebkitMaskImage: "radial-gradient(circle at center, black 50%, transparent 75%)",
-          maskImage: "radial-gradient(circle at center, black 50%, transparent 75%)"
-        }}
+    <section className="max-w-4xl mx-auto">
+      <Spotlight
+        className="-top-40 left-0 md:left-60 md:-top-20"
+        fill="white"
       />
-      <p className="text-4xl tracking-tighter leading-9 max-w-[30ch] font-bold text-center">
-        Join the Revolution in AI-Powered Business Solutions!
-      </p>
 
-      <p className="text-center my-10 text-lg leading-6 max-w-2xl">
-        Discover how we transform your business through our proven AI integration process. From initial assessment to measurable results, we guide you through each step of implementing intelligent solutions that drive real business value.
-      </p>
+      <div className="flex flex-col justify-center items-center relative px-4 gap-8 md:mt-20 py-10">
+        <div className="text-center">
+          <Image
+            src={backgroundGrids}
+            alt="background"
+            quality={100}
+            className="absolute top-0 left-0 -z-[1] w-full h-full"
+            placeholder="blur"
+          />
 
-      <ShimmerButton className="shadow-2xl">
-        <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white from-white to-slate-200/10 lg:text-lg">
+          <h1 className="text-5xl tracking-tighter py-6 font-bold">
+            Join the Revolution in AI-Powered Business Solutions!
+          </h1>
+          <p className="text-lg max-w-2xl text-text-subheading leading-5 mx-auto">
+            Discover how we transform your business through our proven AI
+            integration process. From initial assessment to measurable results,
+            we guide you through each step of implementing intelligent solutions
+            that drive real business value.
+          </p>
+        </div>
+
+        <Link
+          href="/waitlist"
+          className="inline-block rounded-full py-2 px-6 bg-[#3F2B54] text-text-subheading font-bold"
+        >
           Join Waitlist
-        </span>
-      </ShimmerButton>
+        </Link>
+      </div>
+
+      <div className="">
+        <Image
+          src={heroImage}
+          alt="hero"
+          quality={100}
+          className="max-w-full mt-10"
+          placeholder="blur"
+        />
+        <Image
+          src={blob}
+          alt="blob"
+          quality={100}
+          className="absolute top-0 left-0 -z-[1] w-full h-full"
+          placeholder="blur"
+        />
+      </div>
     </section>
   );
 }
