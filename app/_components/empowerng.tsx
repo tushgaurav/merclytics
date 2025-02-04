@@ -9,47 +9,56 @@ export default function Empowering() {
           We&apos;re empowering businesses with cutting-edge AI solutions to
           drive smarter decisions.
         </h1>
-        <h3 className="text-center mt-6 text-sm md:text-base text-gray-400">
+        <h3 className="text-center mt-6 text-text-subheading text-md">
           Be the first to access our exclusive services.
         </h3>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <SpotlightCard className="p-4 rounded-xl">
-          <div className="space-y-6">
-            <div className="w-12 h-12 rounded-lg bg-brand-violet/20 flex items-center justify-center">
-              <BadgeDollarSign size={24} className="text-brand-violet" />
+        <div className="bg-[#3F2B54] rounded-xl p-6 text-center text-text-subheading max-w-60">
+          <div className="space-y-4">
+            <div className="flex justify-center">
+              <BadgeDollarSign size={48} className="text-brand-violet" />
             </div>
-            <h4 className="text-lg font-semibold">Sales Optimization</h4>
-            <p className="text-gray-400 leading-relaxed">
-              AI Solutions tailored for inbound & outbound sales optimization and revenue growth.
-            </p>
+            <div className="space-y-2">
+              <h4 className="text-lg font-semibold">Sales Optimization</h4>
+              <p className="text-gray-400 leading-relaxed">
+                AI Solutions tailored for inbound & outbound sales optimization
+                and revenue growth.
+              </p>
+            </div>
           </div>
-        </SpotlightCard>
+        </div>
 
-        <SpotlightCard className="p-4 rounded-xl">
-          <div className="space-y-6">
-            <div className="w-12 h-12 rounded-lg bg-brand-violet/20 flex items-center justify-center">
-              <HeartHandshake size={24} className="text-brand-violet" />
+        <div className="bg-[#3F2B54] rounded-xl p-6 text-center text-text-subheading max-w-60">
+          <div className="space-y-4">
+            <div className="flex justify-center">
+              <HeartHandshake size={48} className="text-brand-violet" />
             </div>
-            <h4 className="text-lg font-semibold">Customer Support</h4>
-            <p className="text-gray-400 leading-relaxed">
-              24/7 real-time customer service support powered by advanced AI technology.
-            </p>
+            <div className="space-y-2">
+              <h4 className="text-lg font-semibold">Customer Support</h4>
+              <p className="text-gray-400 leading-relaxed">
+                24/7 real-time customer service support powered by advanced AI
+                technology.
+              </p>
+            </div>
           </div>
-        </SpotlightCard>
+        </div>
 
-        <SpotlightCard className="p-4 rounded-xl">
-          <div className="space-y-6">
-            <div className="w-12 h-12 rounded-lg bg-brand-violet/20 flex items-center justify-center">
-              <Bot size={24} className="text-brand-violet" />
+        <div className="bg-[#3F2B54] rounded-xl p-6 text-center text-text-subheading max-w-60">
+          <div className="space-y-4">
+            <div className="flex justify-center">
+              <Bot size={48} className="text-brand-violet" />
             </div>
-            <h4 className="text-lg font-semibold">Smart Assistance</h4>
-            <p className="text-gray-400 leading-relaxed">
-              Personalized business assistance powered by intelligent automation.
-            </p>
+            <div className="space-y-2">
+              <h4 className="text-lg font-semibold">Smart Assistance</h4>
+              <p className="text-gray-400 leading-relaxed">
+                Personalized business assistance powered by intelligent
+                automation.
+              </p>
+            </div>
           </div>
-        </SpotlightCard>
+        </div>
       </div>
     </div>
   );
