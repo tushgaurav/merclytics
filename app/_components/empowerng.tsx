@@ -1,4 +1,3 @@
-import SpotlightCard from "@/components/ui/spotlight-card";
 import { BadgeDollarSign, HeartHandshake, Bot } from "lucide-react";
 
 export default function Empowering() {

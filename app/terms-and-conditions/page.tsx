@@ -107,7 +107,7 @@ export default function TermsAndConditionsPage() {
                     <ul className="list-disc pl-6 mb-4">
                         <li>Our AI models may process your data to provide Services</li>
                         <li>We may use anonymized data to improve our models</li>
-                        <li>Processing results may vary and are provided "as is"</li>
+                        <li>Processing results may vary and are provided &quot;as is&quot;</li>
                     </ul>
 
                     <h3 className="text-xl font-semibold mb-2">7.2 Accuracy and Reliability</h3>
@@ -122,7 +122,7 @@ export default function TermsAndConditionsPage() {
                     <h2 className="text-2xl font-bold mb-4">8. Liability and Indemnification</h2>
                     <h3 className="text-xl font-semibold mb-2">8.1 Limitation of Liability</h3>
                     <ul className="list-disc pl-6 mb-4">
-                        <li>Services are provided "as is" without warranties</li>
+                        <li>Services are provided &quot;as is&quot; without warranties</li>
                         <li>We are not liable for indirect or consequential damages</li>
                         <li>Our total liability is limited to fees paid in the last 12 months</li>
                     </ul>
