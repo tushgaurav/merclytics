@@ -54,7 +54,7 @@ export default function Hero() {
           src={blob}
           alt="blob"
           quality={100}
-          className="absolute top-0 left-0 -z-[1] w-full h-full"
+          className="absolute top-[80%] left-0 -z-[1] w-full h-full"
           placeholder="blur"
         />
       </div>
