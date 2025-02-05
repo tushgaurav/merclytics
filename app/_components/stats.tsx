@@ -20,8 +20,8 @@ export default function Stats() {
     { metricValue: "56,300", metricName: "AI-Powered Decisions Daily" },
   ];
   return (
-    <div className="lg:mt-20 max-w-4xl mx-auto p-4 lg:mb-20">
-      <div className="flex justify-between items-center">
+    <div className="mt-20 max-w-4xl mx-auto p-4 lg:mb-20">
+      <div className="flex justify-center md:justify-between gap-6 flex-wrap items-center">
         {statitics.map((stats) => {
           return (
             <StatCard

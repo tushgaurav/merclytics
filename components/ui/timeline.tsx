@@ -36,16 +36,16 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       className="w-full my-10 md:px-10"
       ref={containerRef}
     >
-      <div className="text-center py-20 px-4 md:px-8 lg:px-10">
-        <h2 className="text-lg md:text-4xl mb-4 font-bold max-w-4xl">
+      <div className="text-center md:py-20 px-4 md:px-8 lg:px-10">
+        <h2 className="text-lg md:text-4xl mb-4 font-bold max-w-4xl leading-6 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
           Our AI Implementation Journey
         </h2>
-        <p className="text-sm md:text-base max-w-sm mx-auto">
+        <p className="text-sm md:text-base max-w-sm mx-auto text-text-subheading">
           From comprehensive analysis to seamless integration, see how our AI solutions transform your business operations at every step.
         </p>
       </div>
 
-      <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
+      <div ref={ref} className="relative max-w-7xl mx-auto md:pb-20">
         {data.map((item, index) => (
           <div
             key={index}

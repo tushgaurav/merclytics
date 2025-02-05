@@ -28,13 +28,13 @@ export default function FooterSection() {
     //         </div>
     //     </div>
     // </footer>
-    <footer className="">
+    <footer className="py-8">
       <div className="max-w-7xl mx-auto text-text-subheading p-4">
-        <div className="text-[10rem] opacity-40 tracking-tighter font-bold text-[#271642]">
+        <div className="text-[4rem] md:text-[10rem] opacity-70 md:opacity-40 tracking-tighter font-bold text-[#271642]">
           merclytics
         </div>
 
-        <div className="grid justify-items-start gap-4 md:grid-cols-3 items-start">
+        <div className="grid justify-items-start gap-8 md:gap-6 md:grid-cols-3 items-start">
           <div>
             <h2 className="font-bold uppercase">Platform</h2>
             <ul className="mt-2 space-y-1">
@@ -71,8 +71,8 @@ export default function FooterSection() {
           </div>
         </div>
 
-        <div className="flex mt-6 flex-wrap justify-between items-end">
-          <div>
+        <div className="flex mt-6 flex-wrap gap-2 justify-between items-end">
+          <div className="flex flex-col gap-2 md:gap-1">
             <ul className="flex gap-2">
               <li>
                 <Link href="/privacy-policy">Privacy Policy</Link>

@@ -23,10 +23,10 @@ export default function Hero() {
             placeholder="blur"
           />
 
-          <h1 className="text-5xl tracking-tighter py-6 font-bold">
+          <h1 className="text-2xl md:text-5xl tracking-tighter py-10 mdpy-6 font-bold">
             Join the Revolution in AI-Powered Business Solutions!
           </h1>
-          <p className="text-lg max-w-2xl text-text-subheading leading-5 mx-auto">
+          <p className="text-md md:text-lg max-w-2xl text-text-subheading leading-5 mx-auto">
             Discover how we transform your business through our proven AI
             integration process. From initial assessment to measurable results,
             we guide you through each step of implementing intelligent solutions
@@ -42,7 +42,7 @@ export default function Hero() {
         </Link>
       </div>
 
-      <div className="">
+      <div className="p-4">
         <Image
           src={heroImage}
           alt="hero"

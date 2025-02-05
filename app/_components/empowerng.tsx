@@ -3,8 +3,8 @@ import { BadgeDollarSign, HeartHandshake, Bot } from "lucide-react";
 export default function Empowering() {
   return (
     <div className="lg:mt-10 max-w-4xl mx-auto p-4 lg:mb-20">
-      <div className="mb-16 md:mb-24">
-        <h1 className="text-center text-3xl md:text-4xl font-bold max-w-2xl mx-auto mt-16 leading-relaxed bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+      <div className="mb-10 md:mb-24">
+        <h1 className="text-center text-xl md:text-4xl font-bold max-w-2xl mx-auto mt-16 leading-6 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
           We&apos;re empowering businesses with cutting-edge AI solutions to
           drive smarter decisions.
         </h1>
@@ -13,7 +13,7 @@ export default function Empowering() {
         </h3>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="flex justify-center md:justify-between items-stretch flex-wrap gap-6">
         <div className="bg-[#3F2B54] rounded-xl p-6 text-center text-text-subheading max-w-60">
           <div className="space-y-4">
             <div className="flex justify-center">
