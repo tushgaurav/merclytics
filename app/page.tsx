@@ -4,11 +4,13 @@ import Hero from "./_components/hero";
 import Empowering from "./_components/empowerng";
 import { TimelineDemo } from "./_components/timeline";
 import Stats from "./_components/stats";
+import ChatBot from "./_components/chatbot";
 
 export const metadata: Metadata = {
   title: "Merclytics - AI Powered Business Solutions",
   description: "Empowering businesses with intelligent AI solutions",
 };
+
 
 export default function Home() {
   return (
@@ -17,6 +19,7 @@ export default function Home() {
       <Stats />
       <Empowering />
       <TimelineDemo />
+      <ChatBot />
     </div>
   );
 }
