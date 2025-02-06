@@ -38,17 +38,27 @@ export default function FooterSection() {
           <div>
             <h2 className="font-bold uppercase">Platform</h2>
             <ul className="mt-2 space-y-1">
-              <li>Overview</li>
-              <li>Pricing</li>
-              <li>Security & Compliance</li>
-              <li>AI & Machine Learning</li>
+              <li>
+                <Link href="/platform#overview">Overview</Link>
+              </li>
+              <li>
+                <Link href="">Pricing</Link>
+              </li>
+              <li>
+                <Link href="/platform#compliance">Security & Compliance</Link>
+              </li>
+              <li>
+                <Link href="/platform#ai-ml">AI & Machine Learning</Link>
+              </li>
             </ul>
           </div>
 
           <div>
             <h2 className="font-bold uppercase">Solutions</h2>
             <ul className="mt-2 space-y-1">
-              <li>Request a Demo</li>
+              <li>
+                Request a Demo
+                </li>
               <li>Chatbot</li>
               <li>AI Assistant</li>
               <li>Bussiness Solutions</li>
